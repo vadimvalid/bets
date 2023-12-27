@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  gap: torem(10);
+
+  &__text {
+    font-size: 13px;
+    font-weight: 300;
+
+    > p {
+      font-size: 14px;
+      font-weight: 800;
+    }
+  }
+}

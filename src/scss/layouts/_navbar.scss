@@ -1,0 +1,25 @@
+.navbar {
+  .navbar {
+    &__menu {
+      position: absolute;
+      left: 50%;
+      display: none;
+      flex-direction: column;
+      gap: torem(30);
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    @include md-breakpoint {
+      &__menu {
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        gap: torem(50);
+        transform: none;
+        text-align: initial;
+      }
+    }
+  }
+}

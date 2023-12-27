@@ -1,0 +1,48 @@
+.navbar {
+  &__icon {
+    padding: torem(20) 0;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+
+    &.has-submenu {
+      position: relative;
+
+      .navbar__submenu {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0px 0px 50px 0px rgba(21, 47, 89, 0.05);
+      }
+
+      &:hover {
+        .navbar__submenu {
+          display: block;
+        }
+      }
+    }
+
+    > a {
+      display: flex;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @include md-breakpoint {
+    &__icon {
+      color: #152f59;
+    }
+  }
+}
