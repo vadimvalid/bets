@@ -13,6 +13,7 @@
       padding: torem(100) 0 0;
       text-align: center;
       overflow: hidden;
+      z-index: 2;
 
       &:before {
         content: '';

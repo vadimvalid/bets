@@ -1,0 +1,132 @@
+.card {
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: torem(15);
+    padding: torem(20) 0;
+    border-bottom: 1px solid #e6efff;
+
+    .content {
+      display: flex;
+      gap: torem(15);
+
+      &__item {
+        flex: 0 1 60%;
+        display: flex;
+        flex-direction: column;
+        gap: torem(15);
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: torem(15);
+
+          &:first-child {
+            color: #152f59;
+            font-weight: 700;
+
+            > span {
+              color: #3981f3;
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            > img {
+              width: torem(60);
+              height: torem(60);
+            }
+          }
+
+          &:last-child {
+            color: #3981f3;
+            font-size: 16px;
+            font-weight: 700;
+
+            > span {
+              color: #152f59;
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: torem(3);
+          font-weight: 700;
+
+          > span {
+            color: #3981f3;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &__buttons {
+        flex: 0 1 40%;
+        display: flex;
+        flex-direction: column;
+        gap: torem(10);
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: torem(5);
+      color: #152f59;
+      font-size: 12px;
+      line-height: 18px;
+
+      li {
+        position: relative;
+        padding-left: torem(18);
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 8px;
+          height: 10px;
+          background-image: url('@images/icon-list.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: 0;
+      border: none;
+
+      .content {
+        gap: torem(20);
+
+        &__item {
+          .item {
+            &:first-child {
+              > span {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .text {
+            > span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .list {
+        gap: torem(7);
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
