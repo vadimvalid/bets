@@ -1,9 +1,14 @@
 .header {
   position: relative;
+  padding-top: torem(20);
 
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include sm-breakpoint {
+    padding-top: torem(30);
   }
 }

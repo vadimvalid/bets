@@ -14,7 +14,7 @@
       width: 100%;
       height: 2px;
       background-color: #3981f3;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     > span {
@@ -43,15 +43,18 @@
     &:checked {
       & ~ .navbar__btn > span {
         transform: rotate(45deg);
+        background-color: #fff;
 
         &:before {
           top: 0;
           transform: rotate(0);
+          background-color: #fff;
         }
 
         &:after {
           top: 0;
           transform: rotate(90deg);
+          background-color: #fff;
         }
       }
 
