@@ -1,0 +1,14 @@
+{
+  "submenuItems": [
+    {
+      "url": "#",
+      "icon": "icon",
+      "title": "title"
+    },
+    {
+      "url": "#",
+      "icon": "icon",
+      "title": "title"
+    }
+  ]
+}
