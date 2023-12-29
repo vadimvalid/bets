@@ -90,4 +90,67 @@
       }
     }
   }
+
+  &--comparison {
+    .details__content {
+      .table {
+        &__row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: torem(10);
+          padding: torem(10) torem(15);
+          font-size: 12px;
+          line-height: 18px;
+
+          &:first-child {
+            img {
+              width: torem(48);
+              height: torem(48);
+              margin: 0 auto;
+            }
+          }
+
+          &:nth-child(even) {
+            border-radius: 10px;
+            border-top: 1px solid #e6efff;
+            background: #f2f7ff;
+          }
+
+          > .item {
+            flex: 1 1 40%;
+            text-align: center;
+
+            &:first-child {
+              flex: 1 1 60%;
+              font-weight: 600;
+              text-align: initial;
+            }
+
+            > .button {
+              padding: torem(5) 0;
+            }
+          }
+
+          @include sm-breakpoint {
+            padding: torem(15) torem(30);
+            font-size: 14px;
+            line-height: 20px;
+
+            > .item {
+              flex: 1 1 40%;
+
+              &:first-child {
+                flex: 1 1 60%;
+              }
+
+              > .button {
+                padding: torem(10) 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

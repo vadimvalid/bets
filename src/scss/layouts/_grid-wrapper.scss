@@ -1,18 +1,29 @@
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: row dense;
+  grid-template-areas:
+    'head'
+    'right-side'
+    'left-side';
   gap: torem(30);
 
   .head {
-    grid-column: 1 / -1;
+    grid-area: head;
   }
 
   .left-side {
-    grid-column: 1 / 3;
+    grid-area: left-side;
+    display: flex;
+    flex-direction: column;
+    gap: torem(30);
   }
 
   .right-side {
-    grid-column: 3 / 4;
+    grid-area: right-side;
+  }
+
+  @include sm-breakpoint {
+    grid-template-areas:
+      'head head head'
+      'left-side left-side right-side';
   }
 }
