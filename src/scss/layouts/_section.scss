@@ -1,11 +1,6 @@
 .section {
   h2 {
-    padding-bottom: torem(20);
-    color: #3981f3;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
-    border-bottom: 1px solid #e6efff;
+    @include sectionTitle;
   }
 
   .wrapper {
@@ -50,8 +45,8 @@
   }
 
   @include sm-breakpoint {
-    h2 {
-      font-size: 18px;
+    .wrapper {
+      padding: torem(20) torem(30);
     }
   }
 
@@ -74,6 +69,203 @@
         > article {
           flex: 1;
         }
+      }
+    }
+  }
+
+  &--aside {
+    .details__content {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: torem(20);
+
+        a {
+          color: #3981f3;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+
+  &--comparison {
+    .details__content {
+      .table {
+        &__row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: torem(10);
+          padding: torem(10) torem(15);
+          font-size: 12px;
+          line-height: 18px;
+
+          &:first-child {
+            padding-top: 0;
+
+            img {
+              width: torem(48);
+              height: torem(48);
+              margin: 0 auto;
+            }
+          }
+
+          &:nth-child(even) {
+            border-radius: 10px;
+            border-top: 1px solid #e6efff;
+            background: #f2f7ff;
+          }
+
+          > .item {
+            flex: 1 1 40%;
+            text-align: center;
+
+            &:first-child {
+              flex: 1 1 60%;
+              font-weight: 600;
+              text-align: initial;
+            }
+
+            > .button {
+              padding: torem(5) 0;
+            }
+          }
+
+          @include sm-breakpoint {
+            padding: torem(15) torem(30);
+            font-size: 14px;
+            line-height: 20px;
+
+            > .item {
+              flex: 1 1 40%;
+
+              &:first-child {
+                flex: 1 1 60%;
+              }
+
+              > .button {
+                padding: torem(10) 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--review {
+    .details__content {
+      margin-top: torem(20);
+      padding: torem(20);
+      border-radius: 15px;
+      background: #f2f7ff;
+
+      .item {
+        &__app {
+          display: flex;
+          align-items: center;
+          gap: torem(20);
+
+          > img {
+            width: torem(80);
+            height: torem(80);
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: torem(10);
+
+            > div {
+              display: flex;
+              align-items: center;
+              gap: torem(8);
+
+              &:last-child {
+                padding: torem(8) torem(10);
+                border-radius: 30px;
+                background: #3981f3;
+                color: #9cc0f9;
+                font-size: 12px;
+
+                span {
+                  color: #fff;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            p {
+              font-size: 18px;
+              font-weight: 700;
+            }
+
+            span {
+              color: #3981f3;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .logos {
+        display: flex;
+        gap: torem(10);
+
+        img {
+          width: torem(50);
+          height: torem(50);
+        }
+      }
+    }
+  }
+
+  &--reviewer {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: torem(15);
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: torem(7);
+
+        > h3 {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        > p {
+          position: relative;
+          padding-left: torem(14);
+          color: #3981f3;
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: torem(8);
+            height: torem(6);
+            background-image: url('@images/icon-list.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+      @include sm-breakpoint {
+        justify-content: center;
       }
     }
   }

@@ -46,8 +46,12 @@
 
   @include md-breakpoint {
     &__icon {
-      color: #152f59;
       padding-left: torem(30);
+      color: #152f59;
+
+      > a {
+        color: inherit;
+      }
     }
   }
 }

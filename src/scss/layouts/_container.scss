@@ -4,3 +4,11 @@
   margin: 0 auto;
   padding: 0 torem(15);
 }
+
+.main {
+  padding-bottom: torem(50);
+
+  @include sm-breakpoint {
+    padding-bottom: torem(70);
+  }
+}

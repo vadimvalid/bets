@@ -14,3 +14,16 @@
     @content;
   }
 }
+
+@mixin sectionTitle {
+  padding-bottom: torem(20);
+  color: #3981f3;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  border-bottom: 1px solid #e6efff;
+
+  @include sm-breakpoint {
+    font-size: 18px;
+  }
+}
