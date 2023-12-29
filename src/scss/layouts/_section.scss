@@ -1,11 +1,6 @@
 .section {
   h2 {
-    padding-bottom: torem(20);
-    color: #3981f3;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
-    border-bottom: 1px solid #e6efff;
+    @include sectionTitle;
   }
 
   .wrapper {
@@ -50,8 +45,8 @@
   }
 
   @include sm-breakpoint {
-    h2 {
-      font-size: 18px;
+    .wrapper {
+      padding: torem(20) torem(30);
     }
   }
 
@@ -73,6 +68,24 @@
 
         > article {
           flex: 1;
+        }
+      }
+    }
+  }
+
+  &--aside {
+    .details__content {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: torem(20);
+
+        a {
+          color: #3981f3;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          text-decoration-line: underline;
         }
       }
     }

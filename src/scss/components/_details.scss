@@ -1,0 +1,67 @@
+.details {
+  h2 {
+    @include sectionTitle;
+
+    border-bottom: none;
+    padding: 0;
+  }
+
+  &[open] > summary {
+    padding-bottom: torem(20);
+    border-bottom: 1px solid #e6efff;
+
+    > img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    padding: torem(20) 0 torem(5);
+
+    > h3 {
+      margin-bottom: torem(15);
+      color: #152f59;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+
+      > span {
+        color: #3981f3;
+      }
+    }
+
+    > p {
+      font-size: 12px;
+    }
+  }
+
+  @include sm-breakpoint {
+    &__content {
+      > h3 {
+        font-size: 18px;
+      }
+
+      > p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: torem(15);
+  list-style: none;
+  cursor: pointer;
+
+  > img {
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+}
