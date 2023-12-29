@@ -16,31 +16,49 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: torem(30);
     padding: torem(20) 0 torem(5);
 
-    > h3 {
-      margin-bottom: torem(15);
+    h3 {
       font-size: 16px;
       font-weight: 700;
       line-height: 22px;
 
-      > span {
+      span {
         color: #3981f3;
       }
     }
 
-    > p {
+    p {
       font-size: 12px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: torem(15);
+
+      .images {
+        display: flex;
+        gap: torem(30);
+        overflow: auto;
+
+        > img {
+          width: torem(214);
+        }
+      }
     }
   }
 
   @include sm-breakpoint {
     &__content {
-      > h3 {
+      h3 {
         font-size: 18px;
       }
 
-      > p {
+      p {
         font-size: 14px;
       }
     }

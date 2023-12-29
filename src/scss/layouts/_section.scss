@@ -104,6 +104,8 @@
           line-height: 18px;
 
           &:first-child {
+            padding-top: 0;
+
             img {
               width: torem(48);
               height: torem(48);
@@ -149,6 +151,35 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  &--how-to {
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 12px;
+        line-height: 18px;
+
+        &:before {
+          content: '\2022';
+          color: #3981f3;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -torem(8);
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
         }
       }
     }
