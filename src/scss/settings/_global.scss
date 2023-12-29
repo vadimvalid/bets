@@ -23,3 +23,11 @@ ol {
   padding: 0;
   margin: 0;
 }
+
+.mobile {
+  display: block;
+
+  @include md-breakpoint {
+    display: none;
+  }
+}

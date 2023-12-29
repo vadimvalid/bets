@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: torem(12) torem(20);
+  border-radius: 10px;
+  background: #3981f3;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+
+  > img {
+    height: torem(18);
+    width: torem(15);
+  }
+
+  &--secondary {
+    background: #f2f7ff;
+    color: #3981f3;
+  }
+}

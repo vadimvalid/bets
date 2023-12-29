@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: torem(15);
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: torem(10);
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: torem(8);
+
+      img {
+        max-width: torem(15);
+      }
+    }
+  }
+
+  @include md-breakpoint {
+    display: none;
+  }
+}

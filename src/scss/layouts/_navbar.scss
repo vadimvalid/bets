@@ -25,6 +25,10 @@
         backdrop-filter: blur(5px);
         z-index: -1;
       }
+
+      .contacts {
+        margin-top: 40px;
+      }
     }
 
     @include md-breakpoint {

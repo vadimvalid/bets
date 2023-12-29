@@ -3,7 +3,7 @@
 India', isDropdown: false },{ url: '/', title: 'Apps bookmakers', isDropdown:
 true }, { url: '/', title: 'About us', isDropdown: false }, { url: '/', title:
 'Contacts', isDropdown: false },{ url: '/', title: 'Send the app', isDropdown:
-false }] %}
+false }] %} {% import "src/html/components/contacts.html" as contacts %}
 <nav class="navbar">
   <input id="navbar__toggle" type="checkbox" aria-label="Toggle button" />
   <label class="navbar__btn" for="navbar__toggle">
@@ -12,5 +12,9 @@ false }] %}
   <ul class="navbar__menu">
     {% for items in navItems %} {{ navItem.navItem(items.url, items.title,
     items.isDropdown) }} {% endfor %}
+    <div class="mobile">
+      {{contacts.contactsItem('Our contacts', 'example@google.com', '+1 (870)
+      463-8589', 'https://example.com' )}}
+    </div>
   </ul>
 </nav>
