@@ -1,0 +1,54 @@
+.list {
+  &--content {
+    li {
+      &:before {
+        content: '\2022';
+        color: #3981f3;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -torem(8);
+      }
+    }
+  }
+
+  &--done {
+    li {
+      position: relative;
+      padding-left: torem(18);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: torem(8);
+        height: torem(6);
+        background-image: url('@images/list-done.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &--undone {
+    li {
+      position: relative;
+      padding-left: torem(18);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: torem(8);
+        height: torem(6);
+        background-image: url('@images/list-undone.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

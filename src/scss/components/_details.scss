@@ -69,6 +69,7 @@
             }
 
             &:last-child {
+              width: 70%;
               border-top-right-radius: 10px;
             }
           }
@@ -104,6 +105,22 @@
       td,
       th {
         padding: torem(15);
+      }
+    }
+
+    ul {
+      li {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    @include sm-breakpoint {
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

@@ -25,5 +25,11 @@
     grid-template-areas:
       'head head head'
       'left-side left-side right-side';
+
+    .right-side {
+      position: sticky;
+      top: 0;
+      align-self: start;
+    }
   }
 }

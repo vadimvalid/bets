@@ -156,30 +156,69 @@
     }
   }
 
-  &--how-to {
-    ul {
-      list-style: none;
+  &--review {
+    .details__content {
+      margin-top: torem(20);
+      padding: torem(20);
+      border-radius: 15px;
+      background: #f2f7ff;
 
-      li {
-        font-size: 12px;
-        line-height: 18px;
+      .item {
+        &__app {
+          display: flex;
+          align-items: center;
+          gap: torem(20);
 
-        &:before {
-          content: '\2022';
-          color: #3981f3;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-          margin-left: -torem(8);
+          > img {
+            width: torem(80);
+            height: torem(80);
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: torem(10);
+
+            > div {
+              display: flex;
+              align-items: center;
+              gap: torem(8);
+
+              &:last-child {
+                padding: torem(8) torem(10);
+                border-radius: 30px;
+                background: #3981f3;
+                color: #9cc0f9;
+                font-size: 12px;
+
+                span {
+                  color: #fff;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            p {
+              font-size: 18px;
+              font-weight: 700;
+            }
+
+            span {
+              color: #3981f3;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
         }
       }
-    }
 
-    @include sm-breakpoint {
-      ul {
-        li {
-          font-size: 14px;
-          line-height: 20px;
+      .logos {
+        display: flex;
+        gap: torem(10);
+
+        img {
+          width: torem(50);
+          height: torem(50);
         }
       }
     }
