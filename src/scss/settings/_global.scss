@@ -6,6 +6,10 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #fafafa;
   color: $mainColor;
+
+  @include sm-breakpoint {
+    line-height: 1.42;
+  }
 }
 
 a {

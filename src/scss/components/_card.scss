@@ -22,28 +22,28 @@
           gap: $spaceXl2;
 
           &:first-child {
-            font-weight: 700;
+            font-weight: $fontWeightBold;
 
             > span {
               color: $secondaryColor;
               font-size: $fontSizeSm;
-              font-weight: 500;
+              font-weight: $fontWeightMedium;
             }
 
             > img {
-              width: torem(60);
-              height: torem(60);
+              width: $size60;
+              height: $size60;
             }
           }
 
           &:last-child {
             color: $secondaryColor;
             font-size: $fontSize;
-            font-weight: 700;
+            font-weight: $fontWeightBold;
 
             > span {
               font-size: $fontSizeMd;
-              font-weight: 300;
+              font-weight: $fontWeightLight;
             }
           }
         }
@@ -52,12 +52,12 @@
           display: flex;
           flex-direction: column;
           gap: torem(3);
-          font-weight: 700;
+          font-weight: $fontWeightBold;
 
           > span {
             color: $secondaryColor;
             font-size: $fontSizeSm;
-            font-weight: 500;
+            font-weight: $fontWeightMedium;
           }
         }
       }
@@ -75,7 +75,6 @@
       flex-direction: column;
       gap: $spaceXs;
       font-size: $fontSizeSm;
-      line-height: 18px;
 
       li {
         position: relative;
@@ -87,7 +86,7 @@
           top: 50%;
           left: 0;
           width: 8px;
-          height: 10px;
+          height: $spaceMd;
           background-image: url('@images/icon-list.svg');
           background-repeat: no-repeat;
           background-size: contain;
@@ -122,7 +121,6 @@
       .list {
         gap: torem(7);
         font-size: $fontSizeMd;
-        line-height: 20px;
       }
     }
   }

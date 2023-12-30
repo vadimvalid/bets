@@ -2,14 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: $spaceMd;
   padding: $spaceLg $spaceXl4;
-  border-radius: 10px;
+  border-radius: $borderRadius;
   background: $secondaryColor;
   color: $whiteColor;
   font-size: $fontSizeSm;
-  font-weight: 600;
-  line-height: 18px;
+  font-weight: $fontWeightSemiBold;
 
   > img {
     height: $spaceXl3;
@@ -23,5 +22,6 @@
 
   @include sm-breakpoint {
     font-size: $fontSizeMd;
+    line-height: 1.42;
   }
 }

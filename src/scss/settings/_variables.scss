@@ -16,26 +16,48 @@ $greenDarkColor: #017b59;
 $darkColor: #003b77;
 
 // Font sizes
-$fontSize: 16px;
-$fontSizeSm: 12px;
-$fontSizeMd: 14px;
-$fontSizeLg: 18px;
-$fontSizeXl: 20px;
-$fontSizeXl2: 24px;
-$fontSizeXl3: 32px;
-$fontSizeXl4: 36px;
-$fontSizeXl5: 48px;
+$fontSize: 1rem;
+$fontSizeSm: 0.75rem; // 12px
+$fontSizeMd: 0.875rem; // 14px;
+$fontSizeLg: 1.125rem; // 18px;
+$fontSizeXl: 1.25rem; // 20px;
+$fontSizeXl2: 1.5rem; // 24px;
+$fontSizeXl3: 2rem; // 32px;
+$fontSizeXl4: 2.25rem; // 36px;
+$fontSizeXl5: 3rem; // 48px;
 
 // Spaces
-$spaceXs: 5px;
-$spaceSm: 8px;
-$spaceMd: 10px;
-$spaceLg: 12px;
-$spaceXl: 14px;
-$spaceXl2: 15px;
-$spaceXl3: 18px;
-$spaceXl4: 20px;
-$spaceXl5: 25px;
-$spaceXl6: 30px;
-$spaceXl7: 40px;
-$spaceXl8: 50px;
+$spaceXs: 0.3125rem; // 5px;
+$spaceSm: 0.5rem; // 8px;
+$spaceMd: 0.625rem; // 10px;
+$spaceLg: 0.75rem; // 12px;
+$spaceXl: 0.875rem; // 14px;
+$spaceXl2: 0.9375rem; // 15px;
+$spaceXl3: 1.125rem; // 18px;
+$spaceXl4: 1.25rem; // 20px;
+$spaceXl5: 1.5625rem; // 25px;
+$spaceXl6: 1.875rem; // 30px;
+$spaceXl7: 2.5rem; // 40px;
+$spaceXl8: 3.125rem; // 50px;
+$spaceXl9: 6.25rem; // 100px;
+
+// Sizes
+$size48: 3rem; //48px;
+$size60: 3.75rem; //60px;
+$size80: 5rem; // 80px;
+
+// Font weights
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightBlack: 800;
+
+// Border radius
+$borderRadius: 10px;
+$borderRadiusMd: 15px;
+$borderRadiusLg: 30px;
+
+// Shadows
+$shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);

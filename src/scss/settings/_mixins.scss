@@ -18,9 +18,9 @@
 @mixin sectionTitle {
   padding-bottom: $spaceXl4;
   color: $secondaryColor;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
+  font-size: $fontSize;
+  font-weight: $fontWeightSemiBold;
+  line-height: 1.375;
   border-bottom: 1px solid $whiteDarkColor;
 
   @include sm-breakpoint {

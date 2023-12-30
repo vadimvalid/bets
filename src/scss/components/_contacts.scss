@@ -4,12 +4,11 @@
   gap: $spaceXl2;
   color: $whiteColor;
   font-size: $fontSizeSm;
-  line-height: 18px;
 
   &__title {
     font-size: $fontSize;
-    font-weight: 700;
-    line-height: 22px;
+    font-weight: $fontWeightBold;
+    line-height: 1.375;
   }
 
   &__items {

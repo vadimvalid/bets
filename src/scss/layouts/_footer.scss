@@ -1,7 +1,7 @@
 .footer {
   padding: $spaceXl6;
   background: $mainColor;
-  box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
+  box-shadow: $shadow;
 
   .wrapper {
     display: flex;
@@ -25,8 +25,7 @@
       a {
         color: $whiteColor;
         font-size: $fontSizeMd;
-        font-weight: 500;
-        line-height: 20px;
+        font-weight: $fontWeightMedium;
 
         &:hover {
           color: $secondaryColor;
@@ -41,8 +40,7 @@
     color: $whiteColor;
     text-align: center;
     font-size: $fontSizeSm;
-    font-weight: 400;
-    line-height: 18px;
+    font-weight: $fontWeightRegular;
   }
 
   @include sm-breakpoint {
