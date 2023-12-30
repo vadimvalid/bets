@@ -11,7 +11,7 @@
     border-bottom: 1px solid #e6efff;
 
     > img {
-      transform: rotate(180deg);
+      transform: rotate(0deg);
     }
   }
 
@@ -153,5 +153,6 @@ summary {
   > img {
     transition: all 0.3s ease;
     transform-origin: center;
+    transform: rotate(-90deg);
   }
 }

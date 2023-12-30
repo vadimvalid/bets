@@ -36,6 +36,10 @@
 
     > a {
       display: flex;
+
+      &:hover {
+        color: #3981f3;
+      }
     }
 
     &__text {

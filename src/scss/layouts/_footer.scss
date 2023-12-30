@@ -1,0 +1,68 @@
+.footer {
+  padding: torem(30);
+  background: #152f59;
+  box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: torem(30);
+  }
+
+  .logo {
+    align-self: center;
+    color: #fff;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: torem(15);
+    align-self: center;
+
+    li {
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+
+        &:hover {
+          color: #3981f3;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    padding-top: torem(30);
+    border-top: 1px solid #e6efff;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  @include sm-breakpoint {
+    &__links {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: torem(20) torem(30);
+      padding: 0 torem(40);
+
+      li {
+        a {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    &__copyright {
+      padding-top: torem(30);
+      border-top: 1px solid rgba(230, 239, 255, 0.1);
+    }
+  }
+}
