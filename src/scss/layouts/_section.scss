@@ -45,7 +45,7 @@
 
   @include sm-breakpoint {
     .wrapper {
-      padding: $spaceXl4 $spaceXl6;
+      padding: $spaceXl5 $spaceXl6;
     }
   }
 
@@ -159,7 +159,7 @@
       margin-top: $spaceXl4;
       padding: $spaceXl4;
       border-radius: $borderRadiusMd;
-      background: $blueLightColor;
+      background: $greyColor;
 
       .item {
         &__app {

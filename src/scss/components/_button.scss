@@ -15,9 +15,17 @@
     width: $spaceXl2;
   }
 
+  &:hover {
+    background: $secondaryColorActive;
+  }
+
   &--secondary {
     background: $greyColor;
     color: $secondaryColor;
+
+    &:hover {
+      background: #e8f1ff;
+    }
   }
 
   @include sm-breakpoint {

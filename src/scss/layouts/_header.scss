@@ -1,6 +1,9 @@
 .header {
-  position: relative;
-  padding-top: $spaceXl4;
+  position: absolute;
+  top: $spaceXl4;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 
   .wrapper {
     display: flex;
@@ -9,6 +12,6 @@
   }
 
   @include sm-breakpoint {
-    padding-top: $spaceXl6;
+    top: $spaceXl6;
   }
 }

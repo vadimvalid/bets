@@ -5,6 +5,7 @@
     'right-side'
     'left-side';
   gap: $spaceXl6;
+  margin-top: torem(-84);
 
   .head {
     grid-area: head;
@@ -26,6 +27,7 @@
       'head head head'
       'left-side left-side right-side';
     grid-template-columns: auto auto torem(360);
+    margin-top: torem(-200);
 
     .right-side {
       position: sticky;
