@@ -25,6 +25,7 @@
     grid-template-areas:
       'head head head'
       'left-side left-side right-side';
+    grid-template-columns: auto auto torem(360);
 
     .right-side {
       position: sticky;
