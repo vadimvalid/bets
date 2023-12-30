@@ -1,12 +1,12 @@
 .footer {
-  padding: torem(30);
+  padding: $spaceXl6;
   background: $mainColor;
   box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: torem(30);
+    gap: $spaceXl6;
   }
 
   .logo {
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: torem(15);
+    gap: $spaceXl2;
     align-self: center;
 
     li {
@@ -36,7 +36,7 @@
   }
 
   &__copyright {
-    padding-top: torem(30);
+    padding-top: $spaceXl6;
     border-top: 1px solid rgba(230, 239, 255, 0.1);
     color: $whiteColor;
     text-align: center;
@@ -50,8 +50,8 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      gap: torem(20) torem(30);
-      padding: 0 torem(40);
+      gap: $spaceXl4 $spaceXl6;
+      padding: 0 $spaceXl7;
 
       li {
         a {
@@ -61,7 +61,7 @@
     }
 
     &__copyright {
-      padding-top: torem(30);
+      padding-top: $spaceXl6;
     }
   }
 }

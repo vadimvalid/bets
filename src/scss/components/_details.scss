@@ -7,7 +7,7 @@
   }
 
   &[open] > summary {
-    padding-bottom: torem(20);
+    padding-bottom: $spaceXl4;
     border-bottom: 1px solid $whiteDarkColor;
 
     > img {
@@ -18,8 +18,8 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: torem(30);
-    padding: torem(20) 0 torem(5);
+    gap: $spaceXl6;
+    padding: $spaceXl4 0 $spaceXs;
 
     h3 {
       font-size: $fontSize;
@@ -38,11 +38,11 @@
     .item {
       display: flex;
       flex-direction: column;
-      gap: torem(15);
+      gap: $spaceXl2;
 
       .images {
         display: flex;
-        gap: torem(30);
+        gap: $spaceXl6;
         overflow: auto;
 
         > img {
@@ -104,7 +104,7 @@
 
       td,
       th {
-        padding: torem(15);
+        padding: $spaceXl2;
       }
     }
 
@@ -146,7 +146,7 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: torem(15);
+  gap: $spaceXl2;
   list-style: none;
   cursor: pointer;
 

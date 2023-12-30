@@ -7,7 +7,7 @@
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -torem(8);
+        margin-left: -$spaceSm;
       }
     }
   }
@@ -15,7 +15,7 @@
   &--done {
     li {
       position: relative;
-      padding-left: torem(18);
+      padding-left: $spaceXl3;
 
       &:before {
         content: '';
@@ -23,7 +23,7 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        width: torem(8);
+        width: $spaceSm;
         height: torem(6);
         background-image: url('@images/list-done.svg');
         background-repeat: no-repeat;
@@ -35,7 +35,7 @@
   &--undone {
     li {
       position: relative;
-      padding-left: torem(18);
+      padding-left: $spaceXl3;
 
       &:before {
         content: '';
@@ -43,7 +43,7 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        width: torem(8);
+        width: $spaceSm;
         height: torem(6);
         background-image: url('@images/list-undone.svg');
         background-repeat: no-repeat;

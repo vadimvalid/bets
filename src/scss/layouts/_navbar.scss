@@ -9,7 +9,7 @@
       align-items: center;
       width: 100%;
       height: 100vh;
-      gap: torem(30);
+      gap: $spaceXl6;
       padding: torem(100) 0 0;
       text-align: center;
       overflow: hidden;
@@ -37,7 +37,7 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        gap: torem(20);
+        gap: $spaceXl4;
         height: auto;
         padding: torem(4) 0;
         transform: none;

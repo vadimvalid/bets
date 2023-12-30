@@ -2,24 +2,24 @@
   &--list {
     display: flex;
     flex-direction: column;
-    gap: torem(15);
-    padding: torem(20) 0;
+    gap: $spaceXl2;
+    padding: $spaceXl4 0;
     border-bottom: 1px solid $whiteDarkColor;
 
     .content {
       display: flex;
-      gap: torem(15);
+      gap: $spaceXl2;
 
       &__item {
         flex: 0 1 60%;
         display: flex;
         flex-direction: column;
-        gap: torem(15);
+        gap: $spaceXl2;
 
         .item {
           display: flex;
           align-items: center;
-          gap: torem(15);
+          gap: $spaceXl2;
 
           &:first-child {
             font-weight: 700;
@@ -66,20 +66,20 @@
         flex: 0 1 40%;
         display: flex;
         flex-direction: column;
-        gap: torem(10);
+        gap: $spaceMd;
       }
     }
 
     .list {
       display: flex;
       flex-direction: column;
-      gap: torem(5);
+      gap: $spaceXs;
       font-size: $fontSizeSm;
       line-height: 18px;
 
       li {
         position: relative;
-        padding-left: torem(18);
+        padding-left: $spaceXl3;
 
         &:before {
           content: '';
@@ -100,7 +100,7 @@
       border: none;
 
       .content {
-        gap: torem(20);
+        gap: $spaceXl4;
 
         &__item {
           .item {

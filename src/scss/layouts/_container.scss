@@ -2,11 +2,11 @@
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 torem(15);
+  padding: 0 $spaceXl2;
 }
 
 .main {
-  padding-bottom: torem(50);
+  padding-bottom: $spaceXl8;
 
   @include sm-breakpoint {
     padding-bottom: torem(70);

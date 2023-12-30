@@ -7,7 +7,7 @@
 
     &.has-submenu {
       position: relative;
-      padding-right: torem(10);
+      padding-right: $spaceMd;
 
       &:after {
         content: '';
@@ -50,7 +50,7 @@
 
   @include md-breakpoint {
     &__icon {
-      padding-left: torem(30);
+      padding-left: $spaceXl6;
       color: $mainColor;
 
       > a {

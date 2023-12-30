@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: torem(15);
+  gap: $spaceXl2;
   color: $whiteColor;
   font-size: $fontSizeSm;
   line-height: 18px;
@@ -16,15 +16,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: torem(10);
+    gap: $spaceMd;
 
     .item {
       display: flex;
       align-items: center;
-      gap: torem(8);
+      gap: $spaceSm;
 
       img {
-        max-width: torem(15);
+        max-width: $spaceXl2;
       }
     }
   }

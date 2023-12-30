@@ -4,7 +4,7 @@
   }
 
   .wrapper {
-    padding: torem(20);
+    padding: $spaceXl4;
     border-radius: 15px;
     background: $whiteColor;
     box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
@@ -13,11 +13,11 @@
   .more {
     display: flex;
     justify-content: center;
-    padding-top: torem(20);
+    padding-top: $spaceXl4;
 
     a {
       position: relative;
-      padding-left: torem(15);
+      padding-left: $spaceXl2;
       color: $secondaryColor;
       font-size: $fontSizeSm;
       font-weight: 600;
@@ -29,8 +29,8 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        width: torem(8);
-        height: torem(8);
+        width: $spaceSm;
+        height: $spaceSm;
         background-image: url('@images/icon-more.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -46,7 +46,7 @@
 
   @include sm-breakpoint {
     .wrapper {
-      padding: torem(20) torem(30);
+      padding: $spaceXl4 $spaceXl6;
     }
   }
 
@@ -62,7 +62,7 @@
       .items {
         display: flex;
         justify-content: space-between;
-        gap: clamp(torem(10), 4vw, torem(50));
+        gap: clamp($spaceMd, 4vw, $spaceXl8);
         padding: 30px 0;
         border-bottom: 1px solid $whiteDarkColor;
 
@@ -78,7 +78,7 @@
       ul {
         display: flex;
         flex-direction: column;
-        gap: torem(20);
+        gap: $spaceXl4;
 
         a {
           color: $secondaryColor;
@@ -98,8 +98,8 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          gap: torem(10);
-          padding: torem(10) torem(15);
+          gap: $spaceMd;
+          padding: $spaceMd $spaceXl2;
           font-size: $fontSizeSm;
           line-height: 18px;
 
@@ -130,12 +130,12 @@
             }
 
             > .button {
-              padding: torem(5) 0;
+              padding: $spaceXs 0;
             }
           }
 
           @include sm-breakpoint {
-            padding: torem(15) torem(30);
+            padding: $spaceXl2 $spaceXl6;
             font-size: $fontSizeMd;
             line-height: 20px;
 
@@ -147,7 +147,7 @@
               }
 
               > .button {
-                padding: torem(10) 0;
+                padding: $spaceMd 0;
               }
             }
           }
@@ -158,8 +158,8 @@
 
   &--review {
     .details__content {
-      margin-top: torem(20);
-      padding: torem(20);
+      margin-top: $spaceXl4;
+      padding: $spaceXl4;
       border-radius: 15px;
       background: $blueLightColor;
 
@@ -167,7 +167,7 @@
         &__app {
           display: flex;
           align-items: center;
-          gap: torem(20);
+          gap: $spaceXl4;
 
           > img {
             width: torem(80);
@@ -177,15 +177,15 @@
           .text {
             display: flex;
             flex-direction: column;
-            gap: torem(10);
+            gap: $spaceMd;
 
             > div {
               display: flex;
               align-items: center;
-              gap: torem(8);
+              gap: $spaceSm;
 
               &:last-child {
-                padding: torem(8) torem(10);
+                padding: $spaceSm $spaceMd;
                 border-radius: 30px;
                 background: $secondaryColor;
                 color: #9cc0f9;
@@ -214,11 +214,11 @@
 
       .logos {
         display: flex;
-        gap: torem(10);
+        gap: $spaceMd;
 
         img {
-          width: torem(50);
-          height: torem(50);
+          width: $spaceXl8;
+          height: $spaceXl8;
         }
       }
     }
@@ -228,7 +228,7 @@
     .wrapper {
       display: flex;
       align-items: center;
-      gap: torem(15);
+      gap: $spaceXl2;
 
       .content {
         display: flex;
@@ -243,7 +243,7 @@
 
         > p {
           position: relative;
-          padding-left: torem(14);
+          padding-left: $spaceXl;
           color: $secondaryColor;
           font-size: 11px;
           font-weight: 700;
@@ -255,7 +255,7 @@
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            width: torem(8);
+            width: $spaceSm;
             height: torem(6);
             background-image: url('@images/icon-list.svg');
             background-repeat: no-repeat;

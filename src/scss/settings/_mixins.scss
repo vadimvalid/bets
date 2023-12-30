@@ -16,7 +16,7 @@
 }
 
 @mixin sectionTitle {
-  padding-bottom: torem(20);
+  padding-bottom: $spaceXl4;
   color: $secondaryColor;
   font-size: 16px;
   font-weight: 600;

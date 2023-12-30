@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  gap: torem(10);
+  gap: $spaceMd;
   z-index: 5;
 
   &__text {
