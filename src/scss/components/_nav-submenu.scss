@@ -1,45 +1,45 @@
 .navbar__submenu {
   position: absolute;
-  top: calc(100% + 16px);
+  top: calc(100% + 1rem);
   left: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: $spaceXl6;
   width: 100%;
   min-width: torem(420);
-  padding: 25px 30px;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0px 0px 50px 0px rgba(21, 47, 89, 0.05);
+  padding: $spaceXl5 $spaceXl6;
+  border-radius: $borderRadiusMd;
+  background: $whiteColor;
+  box-shadow: 0 0 50px 0 rgba(21, 47, 89, 0.05);
   visibility: hidden;
   opacity: 0;
   z-index: 50;
   transition: all 0.3s ease;
 
   > li {
-    flex: 0 1 calc(50% - 15px);
+    flex: 0 1 calc(50% - $spaceXl2);
     padding: 0;
 
     > a {
       align-items: center;
-      gap: torem(15);
+      gap: $spaceXl2;
 
       .navbar__icon__text {
         display: flex;
         flex-direction: column;
         gap: 3px;
         color: #b8bfcc;
-        font-size: 14px;
+        font-size: $fontSizeMd;
 
         > img {
-          width: torem(60);
-          height: torem(60);
+          width: $size60;
+          height: $size60;
         }
 
         > p {
           &:first-child {
-            font-weight: 600;
-            color: #152f59;
+            font-weight: $fontWeightSemiBold;
+            color: $mainColor;
           }
         }
 

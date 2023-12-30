@@ -2,22 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: torem(12) torem(20);
-  border-radius: 10px;
-  background: #3981f3;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
+  gap: $spaceMd;
+  padding: $spaceLg $spaceXl4;
+  border-radius: $borderRadius;
+  background: $secondaryColor;
+  color: $whiteColor;
+  font-size: $fontSizeSm;
+  font-weight: $fontWeightSemiBold;
 
   > img {
-    height: torem(18);
-    width: torem(15);
+    height: $spaceXl3;
+    width: $spaceXl2;
   }
 
   &--secondary {
-    background: #f2f7ff;
-    color: #3981f3;
+    background: $greyColor;
+    color: $secondaryColor;
+  }
+
+  @include sm-breakpoint {
+    font-size: $fontSizeMd;
+    line-height: 1.42;
   }
 }

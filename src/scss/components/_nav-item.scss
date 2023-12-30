@@ -1,13 +1,13 @@
 .navbar {
   &__icon {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+    color: $whiteColor;
+    font-size: $fontSize;
+    font-weight: $fontWeightRegular;
+    line-height: 1.375;
 
     &.has-submenu {
       position: relative;
-      padding-right: torem(10);
+      padding-right: $spaceMd;
 
       &:after {
         content: '';
@@ -16,7 +16,7 @@
         right: 0;
         transform: translate(100%, -50%);
         height: 5px;
-        width: 10px;
+        width: $spaceMd;
         background-image: url('@images/icon-down.svg');
         background-size: contain;
         background-repeat: no-repeat;
@@ -38,7 +38,7 @@
       display: flex;
 
       &:hover {
-        color: #3981f3;
+        color: $secondaryColor;
       }
     }
 
@@ -50,8 +50,8 @@
 
   @include md-breakpoint {
     &__icon {
-      padding-left: torem(30);
-      color: #152f59;
+      padding-left: $spaceXl6;
+      color: $mainColor;
 
       > a {
         color: inherit;

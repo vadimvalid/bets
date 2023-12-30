@@ -1,48 +1,46 @@
 .footer {
-  padding: torem(30);
-  background: #152f59;
-  box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
+  padding: $spaceXl6;
+  background: $mainColor;
+  box-shadow: $shadow;
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: torem(30);
+    gap: $spaceXl6;
   }
 
   .logo {
     align-self: center;
-    color: #fff;
+    color: $whiteColor;
   }
 
   &__links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: torem(15);
+    gap: $spaceXl2;
     align-self: center;
 
     li {
       a {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
+        color: $whiteColor;
+        font-size: $fontSizeMd;
+        font-weight: $fontWeightMedium;
 
         &:hover {
-          color: #3981f3;
+          color: $secondaryColor;
         }
       }
     }
   }
 
   &__copyright {
-    padding-top: torem(30);
-    border-top: 1px solid #e6efff;
-    color: #fff;
+    padding-top: $spaceXl6;
+    border-top: 1px solid rgba(230, 239, 255, 0.1);
+    color: $whiteColor;
     text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
+    font-size: $fontSizeSm;
+    font-weight: $fontWeightRegular;
   }
 
   @include sm-breakpoint {
@@ -50,8 +48,8 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      gap: torem(20) torem(30);
-      padding: 0 torem(40);
+      gap: $spaceXl4 $spaceXl6;
+      padding: 0 $spaceXl7;
 
       li {
         a {
@@ -61,8 +59,7 @@
     }
 
     &__copyright {
-      padding-top: torem(30);
-      border-top: 1px solid rgba(230, 239, 255, 0.1);
+      padding-top: $spaceXl6;
     }
   }
 }

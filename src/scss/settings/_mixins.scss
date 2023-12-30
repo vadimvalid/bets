@@ -16,14 +16,14 @@
 }
 
 @mixin sectionTitle {
-  padding-bottom: torem(20);
-  color: #3981f3;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  border-bottom: 1px solid #e6efff;
+  padding-bottom: $spaceXl4;
+  color: $secondaryColor;
+  font-size: $fontSize;
+  font-weight: $fontWeightSemiBold;
+  line-height: 1.375;
+  border-bottom: 1px solid $whiteDarkColor;
 
   @include sm-breakpoint {
-    font-size: 18px;
+    font-size: $fontSizeLg;
   }
 }

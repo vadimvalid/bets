@@ -7,8 +7,8 @@
   }
 
   &[open] > summary {
-    padding-bottom: torem(20);
-    border-bottom: 1px solid #e6efff;
+    padding-bottom: $spaceXl4;
+    border-bottom: 1px solid $whiteDarkColor;
 
     > img {
       transform: rotate(0deg);
@@ -18,31 +18,31 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: torem(30);
-    padding: torem(20) 0 torem(5);
+    gap: $spaceXl6;
+    padding: $spaceXl4 0 $spaceXs;
 
     h3 {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 22px;
+      font-size: $fontSize;
+      font-weight: $fontWeightBold;
+      line-height: 1.375;
 
       span {
-        color: #3981f3;
+        color: $secondaryColor;
       }
     }
 
     p {
-      font-size: 12px;
+      font-size: $fontSizeSm;
     }
 
     .item {
       display: flex;
       flex-direction: column;
-      gap: torem(15);
+      gap: $spaceXl2;
 
       .images {
         display: flex;
-        gap: torem(30);
+        gap: $spaceXl6;
         overflow: auto;
 
         > img {
@@ -56,35 +56,35 @@
       width: 100%;
 
       tr {
-        font-size: 12px;
+        font-size: $fontSizeSm;
         text-align: center;
 
         &:first-child {
-          background: #3981f3;
-          color: #fff;
+          background: $secondaryColor;
+          color: $whiteColor;
 
           th {
             &:first-child {
-              border-top-left-radius: 10px;
+              border-top-left-radius: $borderRadius;
             }
 
             &:last-child {
               width: 70%;
-              border-top-right-radius: 10px;
+              border-top-right-radius: $borderRadius;
             }
           }
         }
 
         &:nth-child(even) {
-          background: #f2f7ff;
+          background: $greyColor;
 
           td {
             &:first-child {
-              border-radius: 10px 0 0 10px;
+              border-radius: $borderRadius 0 0 $borderRadius;
             }
 
             &:last-child {
-              border-radius: 0 10px 10px 0;
+              border-radius: 0 $borderRadius $borderRadius 0;
             }
           }
         }
@@ -92,11 +92,11 @@
         &:nth-child(2) {
           td {
             &:first-child {
-              border-radius: 0 0 0 10px;
+              border-radius: 0 0 0 $borderRadius;
             }
 
             &:last-child {
-              border-radius: 0 0 10px 0;
+              border-radius: 0 0 $borderRadius 0;
             }
           }
         }
@@ -104,22 +104,20 @@
 
       td,
       th {
-        padding: torem(15);
+        padding: $spaceXl2;
       }
     }
 
     ul {
       li {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: $fontSizeSm;
       }
     }
 
     @include sm-breakpoint {
       ul {
         li {
-          font-size: 14px;
-          line-height: 20px;
+          font-size: $fontSizeMd;
         }
       }
     }
@@ -128,11 +126,11 @@
   @include sm-breakpoint {
     &__content {
       h3 {
-        font-size: 18px;
+        font-size: $fontSizeLg;
       }
 
       p {
-        font-size: 14px;
+        font-size: $fontSizeMd;
       }
     }
   }
@@ -146,7 +144,7 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: torem(15);
+  gap: $spaceXl2;
   list-style: none;
   cursor: pointer;
 
