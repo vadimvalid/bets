@@ -1,0 +1,128 @@
+$max-tab-count: 5;
+
+.tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.tab {
+  display: none;
+
+  @for $i from 1 through $max-tab-count {
+    &:checked:nth-of-type(#{$i}) ~ .tab__content:nth-of-type(#{$i}) {
+      opacity: 1;
+      transition: 0.5s opacity ease-in, 0.8s transform ease;
+      position: relative;
+      top: 0;
+      z-index: 100;
+      transform: translateY(0px);
+      text-shadow: 0 0 0;
+    }
+  }
+
+  &:checked + label {
+    border-bottom: 2px solid $secondaryColor;
+    font-weight: $fontWeightSemiBold;
+    cursor: default;
+  }
+
+  + label {
+    display: block;
+    padding: 0 $spaceXl2 $spaceMd $spaceXl2;
+    border-bottom: 1px solid $whiteDarkColor;
+    font-size: $fontSizeMd;
+    line-height: 1.42;
+    flex-grow: 3;
+    user-select: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spaceMd;
+    z-index: -1;
+    padding-top: $spaceXl6;
+    opacity: 0;
+    transform: translateY(-3px);
+
+    > h3 {
+      align-self: stretch;
+      position: relative;
+      font-weight: $fontWeightBold;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: torem(9);
+        height: torem(9);
+        transform: translateY(-50%);
+        background-image: url('@images/icon-down-black.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    p {
+      font-size: $fontSizeSm;
+
+      > span {
+        font-weight: $fontWeightSemiBold;
+      }
+    }
+
+    &__more {
+      all: unset;
+      position: relative;
+      padding-right: $spaceXl2;
+      color: $secondaryColor;
+      font-size: $fontSizeSm;
+      font-weight: $fontWeightSemiBold;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: torem(8);
+        height: torem(4);
+        transform: translateY(-50%);
+        background-image: url('@images/icon-down.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  @include sm-breakpoint {
+    + label {
+      font-size: $fontSize;
+    }
+
+    &__content {
+      gap: $spaceXl4;
+
+      > h3 {
+        margin-bottom: $spaceXs;
+      }
+
+      p {
+        font-size: $fontSizeMd;
+      }
+
+      &__more {
+        font-size: $fontSizeMd;
+      }
+    }
+  }
+}
