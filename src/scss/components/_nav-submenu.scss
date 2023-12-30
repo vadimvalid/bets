@@ -9,7 +9,7 @@
   min-width: torem(420);
   padding: 25px 30px;
   border-radius: 15px;
-  background: #fff;
+  background: $whiteColor;
   box-shadow: 0px 0px 50px 0px rgba(21, 47, 89, 0.05);
   visibility: hidden;
   opacity: 0;
@@ -39,7 +39,7 @@
         > p {
           &:first-child {
             font-weight: 600;
-            color: #152f59;
+            color: $mainColor;
           }
         }
 

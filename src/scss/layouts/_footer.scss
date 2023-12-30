@@ -1,6 +1,6 @@
 .footer {
   padding: torem(30);
-  background: #152f59;
+  background: $mainColor;
   box-shadow: 0px 0px 30px 0px rgba(21, 47, 89, 0.05);
 
   .wrapper {
@@ -11,7 +11,7 @@
 
   .logo {
     align-self: center;
-    color: #fff;
+    color: $whiteColor;
   }
 
   &__links {
@@ -23,13 +23,13 @@
 
     li {
       a {
-        color: #fff;
+        color: $whiteColor;
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
 
         &:hover {
-          color: #3981f3;
+          color: $secondaryColor;
         }
       }
     }
@@ -37,8 +37,8 @@
 
   &__copyright {
     padding-top: torem(30);
-    border-top: 1px solid #e6efff;
-    color: #fff;
+    border-top: 1px solid rgba(230, 239, 255, 0.1);
+    color: $whiteColor;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -62,7 +62,6 @@
 
     &__copyright {
       padding-top: torem(30);
-      border-top: 1px solid rgba(230, 239, 255, 0.1);
     }
   }
 }

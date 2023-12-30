@@ -5,8 +5,8 @@
   gap: 10px;
   padding: torem(12) torem(20);
   border-radius: 10px;
-  background: #3981f3;
-  color: #fff;
+  background: $secondaryColor;
+  color: $whiteColor;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -17,7 +17,11 @@
   }
 
   &--secondary {
-    background: #f2f7ff;
-    color: #3981f3;
+    background: $greyColor;
+    color: $secondaryColor;
+  }
+
+  @include sm-breakpoint {
+    font-size: 14px;
   }
 }

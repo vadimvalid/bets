@@ -3,7 +3,7 @@
     li {
       &:before {
         content: '\2022';
-        color: #3981f3;
+        color: $secondaryColor;
         font-weight: bold;
         display: inline-block;
         width: 1em;
