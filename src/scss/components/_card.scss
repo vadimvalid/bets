@@ -75,23 +75,6 @@
       flex-direction: column;
       gap: $spaceXs;
       font-size: $fontSizeSm;
-
-      li {
-        position: relative;
-        padding-left: $spaceXl3;
-
-        &:before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 0;
-          width: 8px;
-          height: $spaceMd;
-          background-image: url('@images/icon-list.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
     }
 
     @include sm-breakpoint {

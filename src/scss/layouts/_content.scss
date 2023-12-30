@@ -1,0 +1,126 @@
+.page-content {
+  .section {
+    &--app {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $spaceXl4;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          gap: $spaceXl6;
+
+          .item {
+            display: flex;
+
+            &:first-child {
+              align-items: center;
+              gap: $spaceXl4;
+
+              img {
+                width: $size80;
+                height: $size80;
+              }
+
+              .item__text {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: $spaceMd;
+
+                p {
+                  font-weight: $fontWeightBold;
+                  line-height: 1.375;
+                }
+
+                span {
+                  font-size: $fontSizeSm;
+                  font-weight: $fontWeightMedium;
+                  color: $secondaryColor;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              flex-direction: column;
+              gap: $spaceXl2;
+              font-size: $fontSizeMd;
+              font-weight: $fontWeightLight;
+
+              span {
+                color: $secondaryColor;
+                font-size: $fontSize;
+                font-weight: $fontWeightBold;
+              }
+
+              ul {
+                display: flex;
+                flex-direction: column;
+                gap: $spaceXs;
+                font-size: $fontSizeSm;
+              }
+            }
+
+            &:last-child {
+              display: flex;
+
+              > div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 $spaceXl;
+                font-size: $fontSizeSm;
+                font-weight: $fontWeightLight;
+
+                p {
+                  font-size: $fontSize;
+                  font-weight: $fontWeightSemiBold;
+                }
+
+                &:not(:last-child) {
+                  border-right: 1px solid $whiteDarkColor;
+                }
+              }
+
+              .item__block {
+                &--image {
+                  p {
+                    display: flex;
+                    align-items: center;
+                    gap: $spaceMd;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        > p {
+          font-size: $fontSizeSm;
+          font-weight: $fontWeightLight;
+          text-align: center;
+
+          span {
+            font-weight: $fontWeightSemiBold;
+          }
+        }
+
+        > a:not(.button) {
+          font-size: $fontSizeSm;
+          font-weight: $fontWeightSemiBold;
+          color: $secondaryColor;
+          text-decoration-line: underline;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @include sm-breakpoint {
+    padding: 0 $spaceXl9;
+  }
+}
