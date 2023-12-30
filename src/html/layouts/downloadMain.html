@@ -47,7 +47,14 @@
     </section>
 
     <section class="section section--tabs">
-      {% include "src/html/layouts/tabs.html" %}
+      {% include "src/html/layouts/tabs.html" %} {% include
+      "src/html/components/tags.html" %}
+      <div class="images">
+        <img src="@images/tab-1.png" alt="Tab image" />
+        <img src="@images/tab-2.png" alt="Tab image" />
+        <img src="@images/tab-3.png" alt="Tab image" />
+      </div>
+      {% include "src/html/layouts/sectionReviews.html" %}
     </section>
   </div>
 </div>

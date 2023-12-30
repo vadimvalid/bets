@@ -1,0 +1,9 @@
+{% import 'src/html/components/progress.html' as progressItem %}
+<section class="section--reviews">
+  {% include "src/html/components/rating.html" %}
+  <div class="items">
+    {{ progressItem.progress('5', '50%') }} {{ progressItem.progress('4', '60%')
+    }} {{ progressItem.progress('3', '20%') }} {{ progressItem.progress('2',
+    '0%') }} {{ progressItem.progress('1', '80%') }}
+  </div>
+</section>

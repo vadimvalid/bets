@@ -18,6 +18,7 @@ module.exports = {
   resolve: {
     alias: {
       '@images': path.join(__dirname, 'src/images'),
+      '@fonts': path.join(__dirname, 'src/fonts'),
     },
   },
   plugins: [

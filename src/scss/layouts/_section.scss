@@ -267,4 +267,26 @@
       }
     }
   }
+
+  &--tabs {
+    .tags {
+      margin-bottom: $spaceXl4;
+    }
+
+    .images {
+      display: flex;
+      gap: $spaceMd;
+      overflow: auto;
+      margin-bottom: $spaceXl8;
+    }
+  }
+
+  &--reviews {
+    display: flex;
+    gap: $spaceXl6;
+
+    .items {
+      flex: 1;
+    }
+  }
 }
