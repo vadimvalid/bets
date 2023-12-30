@@ -24,6 +24,6 @@
   border-bottom: 1px solid $whiteDarkColor;
 
   @include sm-breakpoint {
-    font-size: 18px;
+    font-size: $fontSizeLg;
   }
 }

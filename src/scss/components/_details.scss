@@ -22,7 +22,7 @@
     padding: torem(20) 0 torem(5);
 
     h3 {
-      font-size: 16px;
+      font-size: $fontSize;
       font-weight: 700;
       line-height: 22px;
 
@@ -32,7 +32,7 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: $fontSizeSm;
     }
 
     .item {
@@ -56,7 +56,7 @@
       width: 100%;
 
       tr {
-        font-size: 12px;
+        font-size: $fontSizeSm;
         text-align: center;
 
         &:first-child {
@@ -110,7 +110,7 @@
 
     ul {
       li {
-        font-size: 12px;
+        font-size: $fontSizeSm;
         line-height: 18px;
       }
     }
@@ -118,7 +118,7 @@
     @include sm-breakpoint {
       ul {
         li {
-          font-size: 14px;
+          font-size: $fontSizeMd;
           line-height: 20px;
         }
       }
@@ -128,11 +128,11 @@
   @include sm-breakpoint {
     &__content {
       h3 {
-        font-size: 18px;
+        font-size: $fontSizeLg;
       }
 
       p {
-        font-size: 14px;
+        font-size: $fontSizeMd;
       }
     }
   }

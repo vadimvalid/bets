@@ -24,7 +24,7 @@
     li {
       a {
         color: $whiteColor;
-        font-size: 14px;
+        font-size: $fontSizeMd;
         font-weight: 500;
         line-height: 20px;
 
@@ -40,7 +40,7 @@
     border-top: 1px solid rgba(230, 239, 255, 0.1);
     color: $whiteColor;
     text-align: center;
-    font-size: 12px;
+    font-size: $fontSizeSm;
     font-weight: 400;
     line-height: 18px;
   }

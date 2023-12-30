@@ -3,11 +3,11 @@
   flex-direction: column;
   gap: torem(15);
   color: $whiteColor;
-  font-size: 12px;
+  font-size: $fontSizeSm;
   line-height: 18px;
 
   &__title {
-    font-size: 16px;
+    font-size: $fontSize;
     font-weight: 700;
     line-height: 22px;
   }

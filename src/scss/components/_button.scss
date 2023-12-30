@@ -7,7 +7,7 @@
   border-radius: 10px;
   background: $secondaryColor;
   color: $whiteColor;
-  font-size: 12px;
+  font-size: $fontSizeSm;
   font-weight: 600;
   line-height: 18px;
 
@@ -22,6 +22,6 @@
   }
 
   @include sm-breakpoint {
-    font-size: 14px;
+    font-size: $fontSizeMd;
   }
 }
