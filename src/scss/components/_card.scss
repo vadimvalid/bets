@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: $spaceXl2;
     padding: $spaceXl4 0;
-    border-bottom: 1px solid $whiteDarkColor;
+    border-bottom: $border;
 
     .content {
       display: flex;
@@ -70,28 +70,11 @@
       }
     }
 
-    .list {
+    ul {
       display: flex;
       flex-direction: column;
       gap: $spaceXs;
       font-size: $fontSizeSm;
-
-      li {
-        position: relative;
-        padding-left: $spaceXl3;
-
-        &:before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 0;
-          width: 8px;
-          height: $spaceMd;
-          background-image: url('@images/icon-list.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
     }
 
     @include sm-breakpoint {
@@ -118,7 +101,7 @@
         }
       }
 
-      .list {
+      ul {
         gap: torem(7);
         font-size: $fontSizeMd;
       }

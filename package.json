@@ -1,5 +1,5 @@
 {
-  "name": "front-attico",
+  "name": "webpack assembly",
   "version": "1.0.0",
   "description": "Starting template for building layout",
   "main": "script.js",
@@ -12,17 +12,8 @@
     "build-prod": "webpack --node-env=production",
     "clear": "rd /s /q dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://git.attico.dev/dev/corp/front-attico"
-  },
-  "author": "Attico",
   "license": "ISC",
-  "homepage": "https://git.attico.dev/dev/corp/front-attico",
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.5",
-    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.0",
@@ -41,9 +32,6 @@
     "prettier": "^2.8.7",
     "sass": "^1.68.0",
     "sass-loader": "^13.3.2",
-    "tailwindcss": "^3.3.3",
-    "tailwindcss-animation": "^1.0.1",
-    "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

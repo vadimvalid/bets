@@ -43,9 +43,21 @@
     }
   }
 
+  &__title {
+    flex: 0 1 100%;
+    padding-bottom: $spaceXl4;
+    font-weight: $fontWeightSemiBold;
+    color: $secondaryColor;
+    border-bottom: $border;
+  }
+
   @include sm-breakpoint {
     .wrapper {
       padding: $spaceXl5 $spaceXl6;
+    }
+
+    &__title {
+      font-size: $fontSizeLg;
     }
   }
 
@@ -63,7 +75,7 @@
         justify-content: space-between;
         gap: clamp($spaceMd, 4vw, $spaceXl8);
         padding: $spaceXl6 0;
-        border-bottom: 1px solid $whiteDarkColor;
+        border-bottom: $border;
 
         > article {
           flex: 1;
@@ -113,7 +125,7 @@
 
           &:nth-child(even) {
             border-radius: $borderRadius;
-            border-top: 1px solid $whiteDarkColor;
+            border-top: $border;
             background: $greyColor;
           }
 
@@ -264,6 +276,85 @@
 
       @include sm-breakpoint {
         justify-content: center;
+      }
+    }
+  }
+
+  &--tabs {
+    .tags {
+      margin-bottom: $spaceXl4;
+    }
+  }
+
+  &--reviews {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: $spaceXl6;
+
+    .item {
+      .items {
+        flex: 1;
+      }
+
+      &.rate {
+        display: flex;
+        align-items: center;
+        gap: $spaceXl6;
+        width: 100%;
+      }
+    }
+
+    @include sm-breakpoint {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .item {
+        flex: 1;
+
+        &.rate {
+          flex: 0 1 40%;
+        }
+      }
+    }
+  }
+
+  &--alternative {
+    .items {
+      display: flex;
+      gap: $spaceXl4;
+      padding-top: $spaceXl4;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > img {
+          margin-bottom: $spaceXl2;
+        }
+
+        > p {
+          font-weight: $fontWeightSemiBold;
+        }
+
+        .rate {
+          display: flex;
+          gap: $spaceXs;
+          font-size: $fontSizeSm;
+          color: $greyLightColor;
+          min-height: $spaceXl4;
+        }
+      }
+
+      @include sm-breakpoint {
+        gap: $spaceXl6;
+
+        .item {
+          .rate {
+            font-size: $fontSizeMd;
+          }
+        }
       }
     }
   }

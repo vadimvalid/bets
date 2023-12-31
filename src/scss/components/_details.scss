@@ -8,7 +8,7 @@
 
   &[open] > summary {
     padding-bottom: $spaceXl4;
-    border-bottom: 1px solid $whiteDarkColor;
+    border-bottom: $border;
 
     > img {
       transform: rotate(0deg);
@@ -47,6 +47,7 @@
 
         > img {
           width: torem(214);
+          aspect-ratio: 1/1;
         }
       }
     }

@@ -30,6 +30,14 @@
         background-size: contain;
       }
     }
+
+    &--blue {
+      li {
+        &:before {
+          background-image: url('@images/icon-list.svg');
+        }
+      }
+    }
   }
 
   &--undone {

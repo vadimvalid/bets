@@ -10,7 +10,7 @@
   padding: $spaceXl5 $spaceXl6;
   border-radius: $borderRadiusMd;
   background: $whiteColor;
-  box-shadow: 0 0 50px 0 rgba(21, 47, 89, 0.05);
+  box-shadow: $shadowSm;
   visibility: hidden;
   opacity: 0;
   z-index: 50;

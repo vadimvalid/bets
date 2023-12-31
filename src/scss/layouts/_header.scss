@@ -1,9 +1,8 @@
 .header {
-  position: absolute;
-  top: $spaceXl4;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  padding: $spaceXl4 0;
+  background: $whiteColor;
+  border-radius: 0 0 $borderRadiusMd $borderRadiusMd;
+  box-shadow: $shadow;
 
   .wrapper {
     display: flex;
@@ -12,6 +11,8 @@
   }
 
   @include sm-breakpoint {
-    top: $spaceXl6;
+    padding: $spaceXl6 0;
+    border-radius: 0;
+    box-shadow: $shadowSm;
   }
 }
