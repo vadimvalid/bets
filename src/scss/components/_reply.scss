@@ -1,0 +1,11 @@
+.reply {
+  display: flex;
+  align-items: center;
+  gap: $spaceSm;
+  font-size: $fontSizeSm;
+  color: $greyLightColor;
+
+  @include sm-breakpoint {
+    font-size: $fontSizeMd;
+  }
+}

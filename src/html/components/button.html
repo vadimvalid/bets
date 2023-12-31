@@ -2,10 +2,9 @@
 <a
   href="{{ url }}"
   class="button {% if isSecondary %}button--secondary{% endif %}"
-  aria-label="{{ title }}"
 >
   {% if icon %}
-  <img src="@images/{{ icon }}" alt="{{title}}" />
+  <img src="@images/{{ icon }}" alt="{{title}} icon" />
   {% endif %} {{title}}
 </a>
 
@@ -13,9 +12,8 @@
 <button
   type="{{ type}}"
   class="button {% if isSecondary %}button--secondary{% endif %}"
-  aria-label="{{ title }}"
 >
-  <img src="{{ icon }}" alt="{{title}}" />
+  <img src="{{ icon }}" alt="{{title}} icon" />
 </button>
 
 {% else %}

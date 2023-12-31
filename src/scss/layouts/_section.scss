@@ -283,10 +283,33 @@
 
   &--reviews {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: $spaceXl6;
 
-    .items {
-      flex: 1;
+    .item {
+      .items {
+        flex: 1;
+      }
+
+      &:first-child {
+        display: flex;
+        align-items: center;
+        gap: $spaceXl6;
+        width: 100%;
+      }
+    }
+
+    @include sm-breakpoint {
+      flex-direction: row;
+
+      .item {
+        flex: 1;
+
+        &:first-child {
+          flex: 0 1 40%;
+        }
+      }
     }
   }
 }
