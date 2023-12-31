@@ -44,7 +44,7 @@
 
   &:not(:last-child) {
     padding-bottom: $spaceXl4;
-    border-bottom: 1px solid $whiteDarkColor;
+    border-bottom: $border;
   }
 
   &:not(:first-child) {

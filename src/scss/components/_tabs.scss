@@ -30,7 +30,7 @@ $max-tab-count: 5;
   + label {
     display: block;
     padding: 0 $spaceXl2 $spaceMd $spaceXl2;
-    border-bottom: 1px solid $whiteDarkColor;
+    border-bottom: $border;
     font-size: $fontSizeMd;
     line-height: 1.42;
     flex-grow: 3;

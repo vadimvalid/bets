@@ -49,12 +49,15 @@
     <section class="section section--tabs">
       {% include "src/html/layouts/tabs.html" %} {% include
       "src/html/components/tags.html" %}
-      <div class="images">
+      <div class="page-content__images">
         <img src="@images/tab-1.png" alt="Tab image" />
         <img src="@images/tab-2.png" alt="Tab image" />
         <img src="@images/tab-3.png" alt="Tab image" />
       </div>
-      {% include "src/html/layouts/sectionReviews.html" %}
     </section>
+
+    {% include "src/html/layouts/sectionReviews.html" %} {% include
+    "src/html/layouts/sectionAlternative.html" %} {% include
+    "src/html/layouts/sectionReviewer.html" %}
   </div>
 </div>

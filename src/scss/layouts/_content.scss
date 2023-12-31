@@ -87,7 +87,7 @@
                 }
 
                 &:not(:last-child) {
-                  border-right: 1px solid $whiteDarkColor;
+                  border-right: $border;
                 }
               }
 
@@ -123,6 +123,20 @@
         }
       }
     }
+
+    &--reviewer {
+      .wrapper {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    gap: $spaceMd;
+    overflow: auto;
   }
 
   @include sm-breakpoint {
@@ -189,7 +203,7 @@
                   }
 
                   &:not(:last-child) {
-                    border-right: 1px solid $whiteDarkColor;
+                    border-right: $border;
                   }
                 }
 
