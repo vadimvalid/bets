@@ -4,6 +4,9 @@
   gap: $spaceSm;
   font-size: $fontSizeSm;
   color: $greyLightColor;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 
   @include sm-breakpoint {
     font-size: $fontSizeMd;
