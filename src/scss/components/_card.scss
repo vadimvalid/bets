@@ -70,7 +70,7 @@
       }
     }
 
-    .list {
+    ul {
       display: flex;
       flex-direction: column;
       gap: $spaceXs;
@@ -101,7 +101,7 @@
         }
       }
 
-      .list {
+      ul {
         gap: torem(7);
         font-size: $fontSizeMd;
       }

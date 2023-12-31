@@ -47,6 +47,9 @@
 
     label {
       position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spaceXs;
       padding-left: $spaceXl7;
 
       &:before,
