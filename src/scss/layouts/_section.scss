@@ -358,4 +358,51 @@
       }
     }
   }
+
+  &--not-found {
+    max-width: torem(400);
+    margin: 0 auto;
+    padding: $spaceXl4 0;
+    font-size: $fontSizeSm;
+    text-align: center;
+
+    h1 {
+      font-size: torem(64);
+      color: $secondaryColor;
+      font-weight: $fontWeightBold;
+      line-height: 1;
+    }
+
+    h2 {
+      margin-bottom: $spaceXl2;
+      padding: 0;
+      border: none;
+      font-size: $fontSizeXl;
+      font-weight: $fontWeightBold;
+      color: $mainColor;
+      text-transform: uppercase;
+    }
+
+    .button {
+      margin-top: $spaceXl6;
+    }
+
+    @include sm-breakpoint {
+      max-width: torem(250);
+      font-size: $fontSizeMd;
+
+      h1 {
+        font-size: torem(96);
+      }
+
+      h2 {
+        margin-bottom: $spaceXl4;
+        font-size: $fontSizeXl2;
+      }
+
+      .button {
+        margin-top: $spaceXl8;
+      }
+    }
+  }
 }

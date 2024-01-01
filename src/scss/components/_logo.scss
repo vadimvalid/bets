@@ -1,6 +1,8 @@
 .logo {
   display: flex;
+  align-items: center;
   gap: $spaceMd;
+  height: $spaceXl6;
   z-index: 5;
 
   &__text {
