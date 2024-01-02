@@ -232,3 +232,55 @@
     }
   }
 }
+
+.main {
+  > .container {
+    > .content {
+      padding-top: $spaceMd;
+
+      h1 {
+        @include sectionSubTitle;
+
+        margin-bottom: $spaceXl4;
+      }
+
+      h2 {
+        @include sectionParagraph;
+
+        margin-top: $spaceXl6;
+        margin-bottom: $spaceXl2;
+        font-weight: $fontWeightBold;
+      }
+
+      p {
+        @include sectionParagraph;
+
+        margin-bottom: $spaceXl4;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: $spaceMd;
+        padding-left: $spaceXl2;
+        list-style: initial;
+
+        li {
+          @include sectionParagraph;
+
+          &::marker {
+            color: $secondaryColor;
+          }
+        }
+      }
+
+      @include sm-breakpoint {
+        padding: $spaceXl2 $spaceXl9;
+
+        h2 {
+          margin-bottom: $spaceXl4;
+        }
+      }
+    }
+  }
+}

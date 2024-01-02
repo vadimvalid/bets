@@ -9,13 +9,13 @@
     li {
       &:not(:first-child) {
         position: relative;
-        padding-left: $spaceXl3;
+        padding-left: $spaceXl5;
 
         &:before {
           content: '>';
           position: absolute;
           top: 50%;
-          left: 5px;
+          left: 6px;
           transform: translateY(-50%);
           width: 8px;
         }
