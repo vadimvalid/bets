@@ -1,0 +1,43 @@
+{% import "src/html/components/button.html" as buttonItem %} {% import
+"src/html/components/application.html" as app %} {% set appItems = [ {image:
+'bet-1', name: '1xBet', rate: '5.0' }, { image: 'bet-2', name: 'Mostbet', rate:
+'5.0' }, { image: 'bet-3', name: 'bet365', rate: '' }, { image: 'bet-4', name:
+'1win', rate: '5.0' }, { image: 'bet-5', name: 'Parimatch', rate: '5.0' },
+{image: 'bet-6', name: 'Melbet', rate: '5.0' }, { image: 'bet-7', name:
+'Betwinner', rate: '5.0' }, { image: 'bet-8', name: 'Betway', rate: '5.0' }, {
+image: 'bet-9', name: 'Fairplay', rate: '5.0' }, { image: 'bet-10', name:
+'Dafabet', rate: '5.0' },{image: 'bet-1', name: '1xBet', rate: '5.0' }, { image:
+'bet-2', name: 'Mostbet', rate: '5.0' }, { image: 'bet-3', name: 'bet365', rate:
+'' }, { image: 'bet-4', name: '1win', rate: '5.0' }, { image: 'bet-5', name:
+'Parimatch', rate: '5.0' }, {image: 'bet-6', name: 'Melbet', rate: '5.0' }, {
+image: 'bet-7', name: 'Betwinner', rate: '5.0' } ]%}
+<div class="container">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ol>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="" aria-current="page">Send the application</a>
+      </li>
+    </ol>
+  </nav>
+  <div class="wrapper">
+    <section class="section section--applications">
+      <h2>Select an application:</h2>
+      {% include 'src/html/components/search.html' %}
+      <div class="items">
+        {% for item in appItems %} {{ app.appItem(item.image, item.name,
+        item.rate) }} {% endfor %}
+      </div>
+    </section>
+    <aside class="aside">
+      <h2>How to send the application?</h2>
+      <ol>
+        <li>Select an application.</li>
+        <li>Choose the download method.</li>
+        <li>Download the app.</li>
+      </ol>
+    </aside>
+  </div>
+</div>

@@ -504,4 +504,43 @@
       }
     }
   }
+
+  &--applications {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    > h2 {
+      @include sectionSubTitle;
+
+      margin-bottom: $spaceXl2;
+      padding: 0;
+      border: none;
+      color: $mainColor;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spaceXl4;
+      margin-top: $spaceXl6;
+
+      .item {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      > h2 {
+        margin-bottom: $spaceXl4;
+      }
+
+      .items {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: $spaceXl7;
+      }
+    }
+  }
 }
