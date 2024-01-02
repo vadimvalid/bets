@@ -27,3 +27,16 @@
     font-size: $fontSizeLg;
   }
 }
+
+@mixin sectionSubTitle {
+  font-size: $fontSize;
+  font-weight: $fontWeightBold;
+}
+
+@mixin sectionParagraph {
+  font-size: $fontSizeSm;
+
+  @include sm-breakpoint {
+    font-size: $fontSizeMd;
+  }
+}
