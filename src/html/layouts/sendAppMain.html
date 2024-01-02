@@ -30,7 +30,83 @@ image: 'bet-7', name: 'Betwinner', rate: '5.0' } ]%}
         {% for item in appItems %} {{ app.appItem(item.image, item.name,
         item.rate) }} {% endfor %}
       </div>
+      <div class="more">
+        <a href="#"> Show more apps </a>
+      </div>
+      <div class="section section--app">
+        <div class="wrapper">
+          <div class="items">
+            <div class="item">
+              <div class="item__image">
+                <img src="@images/bet-1.svg" alt="1xbet" />
+              </div>
+              <div class="item__text">
+                <p>1xBet App Download for Android</p>
+                <span>Hillside Technology Limited</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <p><span>100%</span> Up To <span>25,000$</span></p>
+              <ul class="list--done list--done--blue">
+                <li>Use Bonus Code “BESTAPP” for Exclusive</li>
+                <li>Welcome Offer Boost</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item__block">
+                <p>56K</p>
+                <span>Downloads</span>
+              </div>
+              <div class="item__block">
+                <p>45.5MB</p>
+                <span>File size</span>
+              </div>
+              <div class="item__block item__block--image">
+                <p><img src="@images/android.svg" alt="android icon" />7.0+</p>
+                <span>Android version</span>
+              </div>
+            </div>
+          </div>
+          {{ buttonItem.button('/', 'icon-android.svg', 'Get 1xBet for Android')
+          }} {{ buttonItem.button('/', 'icon-website-blue.svg', 'Go to the web
+          site', true) }}
+          <p><span>8.0.2.408-row</span> (23-11-2023) The lastest version</p>
+          <a href="#" class="open-popup">Is the download not working?</a>
+        </div>
+      </div>
+      <div class="section section--methods">
+        <h2>Choose the download method:</h2>
+        <p>
+          Select the method to get the download link for the selected
+          application
+        </p>
+      </div>
+      <div class="section section--alternative">
+        <div class="section__title">
+          <h3>1xBet Alternative</h3>
+        </div>
+        <div class="items">
+          <div class="item">
+            <img src="@images/bet-2.svg" alt="" />
+            <p>Mostbet</p>
+            <div class="rate">
+              <img src="@images/icon-star-fill.svg" alt="icon star" />
+              <p>5.0</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="@images/bet-3.svg" alt="" />
+            <p>bet365</p>
+            <div class="rate">
+              <img src="@images/icon-star.svg" alt="icon star" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <aside class="aside">
       <h2>How to send the application?</h2>
       <ol>

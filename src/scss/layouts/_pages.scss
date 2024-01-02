@@ -20,51 +20,53 @@
 }
 
 .send {
-  .wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: $spaceXl8;
+  > .container {
+    > .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $spaceXl8;
 
-    .aside {
-      ol {
-        display: flex;
-        flex-direction: column;
-        gap: $spaceXl2;
-        font-size: $fontSizeSm;
-        counter-reset: my-counter;
+      .aside {
+        ol {
+          display: flex;
+          flex-direction: column;
+          gap: $spaceXl2;
+          font-size: $fontSizeSm;
+          counter-reset: my-counter;
 
-        li {
-          counter-increment: my-counter;
-          position: relative;
-          padding-left: torem(35);
+          li {
+            counter-increment: my-counter;
+            position: relative;
+            padding-left: torem(35);
 
-          &:before {
-            content: counter(my-counter);
-            border-radius: $borderRadiusLg;
-            background: $greyColor;
-            color: $secondaryColor;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            width: torem(20);
-            height: torem(20);
-            text-align: center;
-            font-weight: $fontWeightMedium;
+            &:before {
+              content: counter(my-counter);
+              border-radius: $borderRadiusLg;
+              background: $greyColor;
+              color: $secondaryColor;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: torem(20);
+              height: torem(20);
+              text-align: center;
+              font-weight: $fontWeightMedium;
+            }
           }
+        }
+
+        > h2 {
+          @include sectionSubTitle;
+
+          margin-bottom: $spaceXl4;
         }
       }
 
-      > h2 {
-        @include sectionSubTitle;
-
-        margin-bottom: $spaceXl4;
+      @include sm-breakpoint {
+        flex-direction: row;
+        gap: $spaceXl6;
       }
-    }
-
-    @include sm-breakpoint {
-      flex-direction: row;
-      gap: $spaceXl6;
     }
   }
 }
