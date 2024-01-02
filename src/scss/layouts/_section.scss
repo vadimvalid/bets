@@ -796,9 +796,34 @@
       margin-bottom: $spaceXl4;
     }
 
+    > .items {
+      display: flex;
+      gap: $spaceXl4;
+      margin-bottom: $spaceXl6;
+
+      > .method {
+        flex: 1;
+        padding: torem(22);
+        transition: all 0.3s ease;
+
+        &:hover {
+          border: 1.5px solid $secondaryColor;
+          background: $greyColor;
+        }
+      }
+    }
+
     @include sm-breakpoint {
       > p {
         margin-bottom: $spaceXl6;
+      }
+
+      > .items {
+        gap: $spaceXl6;
+
+        > .method {
+          padding: torem(28);
+        }
       }
     }
   }

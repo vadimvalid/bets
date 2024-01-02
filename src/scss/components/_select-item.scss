@@ -35,7 +35,7 @@
     }
   }
 
-  &__rate {
+  .item__rate {
     display: flex;
     gap: $spaceXs;
     font-size: $fontSizeSm;
@@ -78,7 +78,7 @@
   }
 
   @include sm-breakpoint {
-    &__rate {
+    .item__rate {
       font-size: $fontSizeMd;
     }
   }
