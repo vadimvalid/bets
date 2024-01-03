@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   > img {
     width: $size80;
@@ -42,7 +43,7 @@
     color: $greyLightColor;
   }
 
-  &__circle {
+  .item__circle {
     position: absolute;
     top: $size80;
     left: 50%;
@@ -77,9 +78,17 @@
     }
   }
 
+  &:last-child {
+    display: none;
+  }
+
   @include sm-breakpoint {
     .item__rate {
       font-size: $fontSizeMd;
+    }
+
+    &:last-child {
+      display: flex;
     }
   }
 }

@@ -23,4 +23,24 @@ const getAppPopup = (e) => {
   });
 };
 
+const selectItem = (items) => {
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      if (item.classList.contains('active')) return;
+      items.forEach((item) => {
+        item.classList.remove('active');
+      });
+      e.target.classList.toggle('active');
+    });
+  });
+};
+
+const checkMethod = () => {
+  const methods = document.querySelectorAll('.method');
+  if (methods.length) {
+    selectItem(methods);
+  }
+};
+
 getAppPopup();
+checkMethod();

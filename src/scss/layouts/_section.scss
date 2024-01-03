@@ -803,10 +803,11 @@
 
       > .method {
         flex: 1;
-        padding: torem(22);
+        padding: clamp($spaceLg, 4vw, torem(22));
         transition: all 0.3s ease;
 
-        &:hover {
+        &:hover,
+        &.active {
           border: 1.5px solid $secondaryColor;
           background: $greyColor;
         }
