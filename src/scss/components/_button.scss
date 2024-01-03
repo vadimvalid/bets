@@ -11,8 +11,7 @@
   font-weight: $fontWeightSemiBold;
 
   > img {
-    height: $spaceXl3;
-    width: $spaceXl2;
+    min-width: $spaceXl2;
   }
 
   &:hover {
