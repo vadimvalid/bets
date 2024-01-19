@@ -20,6 +20,14 @@
 
   .right-side {
     grid-area: right-side;
+
+    .details {
+      &__content {
+        ul {
+          list-style: none;
+        }
+      }
+    }
   }
 
   @include sm-breakpoint {
