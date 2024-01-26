@@ -1,6 +1,5 @@
 .breadcrumb {
   padding: $spaceXl4 0 $spaceXl6;
-
   ol {
     display: flex;
     align-items: center;
@@ -19,12 +18,12 @@
           left: 6px;
           transform: translateY(-50%);
           width: 8px;
-          color: initial;
         }
       }
-
       &:last-child {
-        color: $secondaryColor;
+        a {
+          color: $secondaryColor;
+        }
       }
     }
 

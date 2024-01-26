@@ -1,36 +1,26 @@
 const openDialog = () => {
   const dialog = document.getElementById('dialog');
-
-  if (dialog !== null) {
-    dialog.showModal();
-  }
+  dialog.showModal();
 };
 
 const closeDialog = () => {
   const dialog = document.getElementById('dialog');
-
-  if (dialog !== null) {
-    dialog.close();
-  }
+  dialog.close();
 };
 
 const getAppPopup = (e) => {
   const button = document.querySelector('.section--app .open-popup');
   const buttonClose = document.querySelector('.dialog__close');
 
-  if (button !== null) {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      openDialog();
-    });
-  }
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    openDialog();
+  });
 
-  if (buttonClose !== null) {
-    buttonClose.addEventListener('click', (e) => {
-      e.preventDefault();
-      closeDialog();
-    });
-  }
+  buttonClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeDialog();
+  });
 };
 
 const selectItem = (items) => {
