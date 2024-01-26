@@ -11,7 +11,10 @@ title, isDropdown) %} {% set submenuItems = [ { url: '/', icon:
 '@images/bet-8.svg', title: 'Betway', rating: '5.0' }, { url: '/', icon:
 '@images/bet-9.svg', title: 'Fairplay', rating: '5.0' }, { url: '/', icon:
 '@images/bet-10.svg', title: 'Dafabet', rating: '5.0' }]%}
-<li class="navbar__icon {% if isDropdown %}has-submenu{% endif %}">
+<li
+  itemprop="name"
+  class="navbar__icon {% if isDropdown %}has-submenu{% endif %}"
+>
   {% if isDropdown %}
   <a
     role="link"

@@ -1,7 +1,7 @@
 {% macro navItemSubmenu(url, icon, title, rating) %}
-<li class="navbar__icon">
+<li class="navbar__icon" itemprop="name">
   <a href="{{url}}" target="_self" itemprop="url">
-    <img src="{{icon}}" alt="{{title}}" />
+    <img src="{{icon}}" alt="{{title}}" loading="lazy" />
     <div class="navbar__icon__text">
       <p>{{title}}</p>
       <div class="rating">

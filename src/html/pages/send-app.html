@@ -15,7 +15,13 @@
 
   <body class="body" itemscope itemtype="https://schema.org/WebPage">
     <div class="content">
-      <header class="header">
+      <header class="header" itemscope itemtype="https://schema.org/WPHeader">
+        <meta itemprop="headline" content="Android Bets" />
+        <meta
+          itemprop="description"
+          content="Applications of the best bookmakers for android"
+        />
+        <meta itemprop="keywords" content="bets, android" />
         {% include "src/html/layouts/header.html" %}
       </header>
       <main class="main send" role="main">
@@ -24,7 +30,8 @@
       <footer
         class="footer"
         aria-label="Site"
-        itemtype="http://schema.org/WPFooter"
+        itemscope
+        itemtype="https://schema.org/WPFooter"
       >
         {% include "src/html/layouts/footer.html" %}
       </footer>
