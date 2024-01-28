@@ -11,7 +11,10 @@ title, isDropdown) %} {% set submenuItems = [ { url: '/', icon:
 '@images/bet-8.svg', title: 'Betway', rating: '5.0' }, { url: '/', icon:
 '@images/bet-9.svg', title: 'Fairplay', rating: '5.0' }, { url: '/', icon:
 '@images/bet-10.svg', title: 'Dafabet', rating: '5.0' }]%}
-<li class="navbar__icon {% if isDropdown %}has-submenu{% endif %}">
+<li
+  itemprop="name"
+  class="navbar__icon {% if isDropdown %}has-submenu{% endif %}"
+>
   {% if isDropdown %}
   <a
     role="link"
@@ -19,6 +22,7 @@ title, isDropdown) %} {% set submenuItems = [ { url: '/', icon:
     class="is-separator"
     aria-haspopup="true"
     tabindex="0"
+    itemprop="url"
     >{{title}}</a
   >
   <ul
@@ -32,7 +36,7 @@ title, isDropdown) %} {% set submenuItems = [ { url: '/', icon:
     buttonItem.button('/', '', 'View all apps') }}
   </ul>
   {% else %}
-  <a href="{{ url }}" target="_self">{{title}}</a>
+  <a href="{{ url }}" target="_self" itemprop="url">{{title}}</a>
   {% endif %}
 </li>
 {% endmacro %}
