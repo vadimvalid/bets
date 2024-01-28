@@ -1,6 +1,7 @@
 {% macro logo(url, icon, title, description) %}
 <div itemscope itemtype="https://schema.org/Organization">
   <meta itemprop="name" content="{{ title }}" />
+  <link itemprop="url" href="/" />
   <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
     <a href="{{ url }}" class="logo" rel="home" itemprop="url image">
       <meta itemprop="name" content="{{ title }}" />
